@@ -42,7 +42,7 @@
             this.dgvHienThi = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelTK = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).BeginInit();
@@ -178,15 +178,16 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Xin Chào";
             // 
-            // label2
+            // labelTK
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label2.Location = new System.Drawing.Point(115, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 25);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "labelTaiKhoan";
+            this.labelTK.AutoSize = true;
+            this.labelTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.labelTK.Location = new System.Drawing.Point(115, 128);
+            this.labelTK.Name = "labelTK";
+            this.labelTK.Size = new System.Drawing.Size(139, 25);
+            this.labelTK.TabIndex = 9;
+            this.labelTK.Text = "labelTaiKhoan";
+            this.labelTK.Visible = false;
             // 
             // label3
             // 
@@ -207,7 +208,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(970, 592);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelTK);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -238,7 +239,7 @@
         private System.Windows.Forms.Button btnDoiMatKhau;
         private System.Windows.Forms.Button btnChiTiet;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelTK;
         private System.Windows.Forms.Label label3;
     }
 }

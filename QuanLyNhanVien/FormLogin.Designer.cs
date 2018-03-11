@@ -1,6 +1,6 @@
 ﻿namespace QuanLyNhanVien
 {
-    partial class FormLogin
+    partial class FormDangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
+            this.txtTK = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMK = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.labelThongBao = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtTK
             // 
-            this.textBox1.Location = new System.Drawing.Point(254, 109);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 24);
-            this.textBox1.TabIndex = 0;
+            this.txtTK.Location = new System.Drawing.Point(252, 113);
+            this.txtTK.Name = "txtTK";
+            this.txtTK.Size = new System.Drawing.Size(175, 20);
+            this.txtTK.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(114, 212);
+            this.button1.Location = new System.Drawing.Point(114, 241);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 66);
             this.button1.TabIndex = 2;
             this.button1.Text = "Đăng nhập";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -74,9 +75,9 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(313, 212);
+            this.button2.Location = new System.Drawing.Point(288, 241);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 66);
+            this.button2.Size = new System.Drawing.Size(139, 66);
             this.button2.TabIndex = 4;
             this.button2.Text = "Hủy Bỏ";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -103,13 +104,13 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Mật khẩu";
             // 
-            // textBox2
+            // txtMK
             // 
-            this.textBox2.Location = new System.Drawing.Point(254, 162);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 24);
-            this.textBox2.TabIndex = 6;
+            this.txtMK.Location = new System.Drawing.Point(252, 166);
+            this.txtMK.Name = "txtMK";
+            this.txtMK.Size = new System.Drawing.Size(175, 20);
+            this.txtMK.TabIndex = 6;
+            this.txtMK.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -131,22 +132,36 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Vui lòng đăng nhập để sử dụng phần mềm";
             // 
-            // FormLogin
+            // labelThongBao
+            // 
+            this.labelThongBao.AutoSize = true;
+            this.labelThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labelThongBao.ForeColor = System.Drawing.Color.Red;
+            this.labelThongBao.Location = new System.Drawing.Point(153, 207);
+            this.labelThongBao.Name = "labelThongBao";
+            this.labelThongBao.Size = new System.Drawing.Size(38, 17);
+            this.labelThongBao.TabIndex = 10;
+            this.labelThongBao.Text = "label";
+            this.labelThongBao.Visible = false;
+            // 
+            // FormDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(539, 337);
+            this.Controls.Add(this.labelThongBao);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtMK);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Name = "FormLogin";
+            this.Controls.Add(this.txtTK);
+            this.Name = "FormDangNhap";
             this.Text = "FormLogin";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,14 +169,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTK;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMK;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelThongBao;
     }
 }

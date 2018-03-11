@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
 using System.Data.SqlClient;
 namespace QuanLyNhanVien
 {
@@ -17,6 +16,7 @@ namespace QuanLyNhanVien
         {
             InitializeComponent();
         }
+        
         SqlConnection con;
         int choice;
         public void HienThi()
@@ -83,6 +83,8 @@ namespace QuanLyNhanVien
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            labelTK.Text = FormDangNhap.a;
+            labelTK.Visible = true;
             string conString = @"Data Source=DESKTOP-8J6L2ID\SQLEXPRESS;Initial Catalog=QuanLyNhanVien;Integrated Security=True";
             con = new SqlConnection(conString);
             con.Open();
@@ -114,7 +116,7 @@ namespace QuanLyNhanVien
 
         private void btnChiTiet_Click(object sender, EventArgs e)
         {
-
+            
             FormChiTiet ChuyenForm = new FormChiTiet();
             ChuyenForm.ShowDialog();
         }
