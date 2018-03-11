@@ -1,0 +1,12 @@
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csprojResolveAssemblyReference.cache
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.FormLogin.resources
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.GenerateResource.Cache
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.csproj.CoreCompileInputs.cache
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.FormChinh.resources
+F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.FormChiTiet.resources
