@@ -33,7 +33,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnDoiMatKhau = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.btnChiTiet = new System.Windows.Forms.Button();
             this.btnBangLuong = new System.Windows.Forms.Button();
             this.btnChamCong = new System.Windows.Forms.Button();
@@ -43,7 +43,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labelTK = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelThongBao = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -56,7 +56,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnDoiMatKhau);
+            this.groupBox1.Controls.Add(this.btnThoat);
             this.groupBox1.Controls.Add(this.btnChiTiet);
             this.groupBox1.Controls.Add(this.btnBangLuong);
             this.groupBox1.Controls.Add(this.btnChamCong);
@@ -68,18 +68,19 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
-            // btnDoiMatKhau
+            // btnThoat
             // 
-            this.btnDoiMatKhau.BackColor = System.Drawing.Color.White;
-            this.btnDoiMatKhau.Image = ((System.Drawing.Image)(resources.GetObject("btnDoiMatKhau.Image")));
-            this.btnDoiMatKhau.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDoiMatKhau.Location = new System.Drawing.Point(805, 9);
-            this.btnDoiMatKhau.Name = "btnDoiMatKhau";
-            this.btnDoiMatKhau.Size = new System.Drawing.Size(123, 85);
-            this.btnDoiMatKhau.TabIndex = 5;
-            this.btnDoiMatKhau.Text = "Đổi mật khẩu";
-            this.btnDoiMatKhau.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDoiMatKhau.UseVisualStyleBackColor = false;
+            this.btnThoat.BackColor = System.Drawing.Color.White;
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(807, 9);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(133, 85);
+            this.btnThoat.TabIndex = 5;
+            this.btnThoat.Text = "Thoát ứng dụng";
+            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnChiTiet
             // 
@@ -171,49 +172,49 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.Location = new System.Drawing.Point(15, 128);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 25);
+            this.label1.Size = new System.Drawing.Size(65, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "Xin Chào";
             // 
             // labelTK
             // 
             this.labelTK.AutoSize = true;
-            this.labelTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.labelTK.Location = new System.Drawing.Point(115, 128);
+            this.labelTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labelTK.Location = new System.Drawing.Point(103, 128);
             this.labelTK.Name = "labelTK";
-            this.labelTK.Size = new System.Drawing.Size(139, 25);
+            this.labelTK.Size = new System.Drawing.Size(99, 17);
             this.labelTK.TabIndex = 9;
             this.labelTK.Text = "labelTaiKhoan";
-            this.labelTK.Visible = false;
             // 
-            // label3
+            // labelThongBao
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(664, 128);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 25);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "labelThongBao";
-            this.label3.Visible = false;
+            this.labelThongBao.AutoSize = true;
+            this.labelThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labelThongBao.ForeColor = System.Drawing.Color.Red;
+            this.labelThongBao.Location = new System.Drawing.Point(557, 128);
+            this.labelThongBao.Name = "labelThongBao";
+            this.labelThongBao.Size = new System.Drawing.Size(104, 17);
+            this.labelThongBao.TabIndex = 10;
+            this.labelThongBao.Text = "labelThongBao";
+            this.labelThongBao.Visible = false;
             // 
             // FormChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(970, 592);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(972, 592);
+            this.Controls.Add(this.labelThongBao);
             this.Controls.Add(this.labelTK);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormChinh";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CHƯƠNG TRÌNH QUẢN LÝ NHÂN VIÊN";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -236,11 +237,11 @@
         private System.Windows.Forms.Button btnChamCong;
         private System.Windows.Forms.DataGridView dgvHienThi;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnDoiMatKhau;
+        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnChiTiet;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelTK;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelThongBao;
     }
 }
 
