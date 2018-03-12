@@ -10,3 +10,6 @@ F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien
 F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.FormChinh.resources
 F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.FormChiTiet.resources
 F:\MTA\Thực tập nhóm\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.FormDangNhap.resources
+E:\git\QuanLyNhanVien_WinformC-\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+E:\git\QuanLyNhanVien_WinformC-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+E:\git\QuanLyNhanVien_WinformC-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
